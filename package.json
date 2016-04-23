@@ -1,0 +1,25 @@
+{
+  "name": "jquery-year-select",
+  "version": "1.0.0",
+  "description": "Simple Jquery plugin for year select",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valluminarias/jquery-year-select.git"
+  },
+  "keywords": [
+    "ecosystem: jquery",
+    "jquery-plugin",
+    "jquery",
+    "year-select",
+    "year"
+  ],
+  "author": "Val Luminarias (vluminarias@yahoo.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/valluminarias/jquery-year-select/issues"
+  },
+  "homepage": "https://github.com/valluminarias/jquery-year-select#readme"
+}
