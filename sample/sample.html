@@ -1,0 +1,24 @@
+<html !doctype>
+    <body>
+        Default: <select class="yearselect"></select>
+        <br/>
+        Order:
+        <br/>
+        DESC: <select class="yrselectdesc"></select>
+        ASC: <select class="yrselectasc"></select>
+
+        <script
+                src="https://code.jquery.com/jquery-2.2.3.min.js"
+                integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+                crossorigin="anonymous"></script>
+        <script src="../lib/year-select.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(e) {
+                $('.yearselect').yearselect();
+
+                $('.yrselectdesc').yearselect({step: 5, order: 'desc'});
+                $('.yrselectasc').yearselect({order: 'asc'});
+            });
+        </script>
+    </body>
+</html>
