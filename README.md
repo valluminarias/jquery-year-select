@@ -34,25 +34,44 @@ Once installed it is very easy to use.
 
 * **start**:
     * Set the year where to start
+    * type: integer
     * **Default**: 1970
 ---
 * **end**:
     * Set the year where to end
+    * type: integer
     * **Default**: new Date().getFullYear(),
 ---
 * **step**:
     * Number of interval between years
+    * type: integer
     * **Default**: 1,
 ---
 * **order**:
     * Defines the order of years rendered
+    * type: "string"
     * 'asc|ASC': Ascending|From lowest to highest
     * 'desc|DESC': Descending|From highest to lowest
     * **Default**: 'asc',
 ---
 * **selected**:
-    * Set the selected year
-    * **Default**: null
+    * Set the selected year option
+    * type: integer | "current"
+    * **Default**: "current"
+---
+* **formatDisplay**:
+    * Format the display of the year.
+    * You can format the dislay of the year in the dropdown. 
+    * For example you wanted to format the year with -1 year like so (2016-2017), you should use this callback
+    * type: function
+    * Accept year as paramater
+    * **Default**: function(yr) { return yr } 
+---
+* **displayAsValue**
+    * Determines the option value
+    * If you used formatDisplay callback, you can make the formatted string as value
+    * type: boolean
+    *  **Default**: true
 
 ### Integrate with other plugin
 

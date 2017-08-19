@@ -9,6 +9,9 @@
         <br/>
         Input Element:
         <input class="yearselect" name="sample" id="sample" class="sample" value="2000"/>
+        <br/>
+        Format Display:
+        <select class="yrselectformatdisplay" data-selected="2016"></select>
 
         <script
                 src="https://code.jquery.com/jquery-2.2.3.min.js"
@@ -21,6 +24,11 @@
 
                 $('.yrselectdesc').yearselect({step: 5, order: 'desc'});
                 $('.yrselectasc').yearselect({order: 'asc'});
+                $('.yrselectformatdisplay').yearselect({
+                    formatDisplay: function(yr) {
+                        return "" + (yr-1) + "-" + yr; 
+                    }
+                })
             });
         </script>
     </body>
